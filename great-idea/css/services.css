@@ -1,10 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -68,8 +63,8 @@ h1, h2, h3, h4, h5 {
   /* TB LR */
   margin: 0 auto;
 }
+/*header*/
 
-/* header */
 header{
   display:flex;
   justify-content: space-between;
@@ -78,9 +73,10 @@ header{
 
 header nav{
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 75%;
+  justify-content: space-between;
+  align-items: center;	
+  width: 60%;
+  font-size: 20px;
 }
 
 header nav a {
@@ -93,73 +89,74 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-
-/* cta */
-
-.cta{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.cta .cta-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 77px;
-  text-align: center;
-  width: 47%;
-  }
-
-.cta .cta-text button{
-  margin-top: 6px;
-  padding: 8px 44px;
-  background: white;
-  border: 1px solid black;
-  cursor: pointer;
-  font-size: 17px;
-  text-align: center;
+.services-header-img{
+	margin-top: 15px;
 }
 
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
+/*main stuff*/
+
+.serviceinfo h1 {
+	font-size: 20px;
+}
+	
+.serviceinfo p{
+	padding-bottom: 5%;
+	border-bottom: 1px solid black;
 }
 
-.cta img {
-  width: 47%;
+.firstsec, .secondsec{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
 }
-/*main*/
-
-.main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
+.thirdsec{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
-
-.main-content .top-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-content .middle-img {
-  margin-top: 45px;
-}
-
-.main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
-  display: flex;
+.digital, .uxui, .digimark, .webdev, .ios, .android {
+/*	display: flex;
+	flex-direction: column;*/
+	background-color: lightgrey;
+	width: 47.5%;
+	border: 1px solid black;
+	padding: 10px;
 }
 
-.contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
+.funfact{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5%; 
+	border-top: 2px	solid black;
 }
 
-.contact p {
-  margin: 20px 0;
+.notfun{
+	width: 47.5%;
+}
+
+li{	
+	margin-left: 5%;
+	margin-top: 3%;
+	line-height: 2;
+}
+.services-info-img{
+	width: 47.5%;
+}
+
+
+button{
+	margin-top: 10px;
+  	padding: 10px 40px;
+  	background: white;
+  	border: 1px solid black;
+  	font-size: 10px;
+  	text-align: center;
+  	border-radius: 5px;
+}
+button:hover{
+	background-color: grey;
+	color: white;
 }
 
 footer {
